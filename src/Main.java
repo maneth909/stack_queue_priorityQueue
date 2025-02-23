@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        Stack<Integer> stack = new Stack<>(5);
+//        Stack<Integer> stack = new Stack<>(5);
 
 //        // Test push operation
 //        stack.push(10);
@@ -22,10 +22,26 @@ public class Main {
 //        System.out.println("Original String: " + input);
 //        System.out.println("Reversed String: " + reversed);
 
-        String input1 = "f{a[s(gd)]sd}asd";
-        boolean delimeter = DelimiterChecker.check(input1);
+//        String input1 = "f{a[s(gd)]sd}asd";
+//        boolean delimeter = DelimiterChecker.check(input1);
+//
+//        System.out.println("Original String: " + input1);
+//        System.out.println("Delimiter Check: " + delimeter);
 
-        System.out.println("Original String: " + input1);
-        System.out.println("Delimiter Check: " + delimeter);
+        PriorityQueue<String> priorityQueue = new PriorityQueue<>(5);
+        priorityQueue.insert("Task A", 1);
+        priorityQueue.insert("Task B", 0);
+        priorityQueue.insert("Task D", 5);
+        priorityQueue.insert("Task C", 3);
+        priorityQueue.insert("Task E", 4);
+
+        priorityQueue.display();
+
+        priorityQueue.peekFront();
+        priorityQueue.peekRear();
+
+        priorityQueue.remove();
+
+        priorityQueue.display();
     }
 }
